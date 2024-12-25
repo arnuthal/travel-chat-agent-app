@@ -1,0 +1,89 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "environmentName": {
+      "value": "${AZURE_ENV_NAME}"
+    },
+    "location": {
+      "value": "${AZURE_LOCATION}"
+    },
+    "resourceGroupName": {
+      "value": "rg-${AZURE_ENV_NAME}"
+    },
+    "dnsResourceGroupName": {
+      "value": "rg-dns-${AZURE_ENV_NAME}"
+    },
+    "aiServicesName": {
+      "value": "${AZURE_AISERVICES_NAME}"
+    },
+    "aiHubName": {
+      "value": "${AZURE_AIHUB_NAME}"
+    },
+    "storageName": {
+      "value": "${AZURE_STORAGE_NAME}"
+    },
+    "keyVaultName": {
+      "value": "${AZURE_KEYVAULT_NAME}"
+    },
+    "bingName": {
+      "value": "${AZURE_BING_NAME}"
+    },
+    "botName": {
+      "value": "${AZURE_BOT_NAME}"
+    },
+    "msiName": {
+      "value": "${AZURE_MSI_NAME}"
+    },
+    "cosmosName": {
+      "value": "${AZURE_COSMOS_NAME}"
+    },
+    "appPlanName": {
+      "value": "${AZURE_APPPLAN_NAME}"
+    },
+    "appName": {
+      "value": "${AZURE_APP_NAME}"
+    },
+    "allowedIpAddresses": {
+      "value": "${ALLOWED_IP_ADDRESSES}"
+    },
+    "myPrincipalType": {
+      "value": "${AZURE_PRINCIPAL_TYPE}"
+    },
+    "myPrincipalId": {
+      "value": "${AZURE_PRINCIPAL_ID}"
+    },
+    "aiServicesLocation": {
+      "value": "${AZURE_AISERVICES_LOCATION}"
+    },
+    "cosmosLocation": {
+      "value": "${AZURE_COSMOSDB_LOCATION}"
+    },
+    "appServiceLocation": {
+      "value": "${AZURE_APPSERVICE_LOCATION}"
+    },
+    "storageLocation": {
+      "value": "${AZURE_STORAGE_LOCATION}"
+    },
+    "keyVaultLocation": {
+      "value": "${AZURE_KEYVAULT_LOCATION}"
+    },
+    "msiLocation": {
+      "value": "${AZURE_MSI_LOCATION}"
+    },
+    "vnetLocation": {
+      "value": "${AZURE_VNET_LOCATION}"
+    },
+    "dnsLocation": {
+      "value": "${AZURE_APPSERVICE_LOCATION}"
+    },
+    "tags": {
+      "value": {
+        "Owner": "AI Team",
+        "Project": "GPTBot",
+        "Environment": "Dev",
+        "Toolkit": "Bicep"
+      }
+    }
+  }
+}

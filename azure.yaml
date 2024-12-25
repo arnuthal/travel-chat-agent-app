@@ -1,0 +1,20 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+
+name: azure-agents-python
+services:
+    azure-agents-app:
+        project: src
+        host: appservice
+        language: python
+hooks:
+    postprovision:
+      windows:
+        shell: pwsh
+        run: Copy-Item ".azure/$(azd env get-value AZURE_ENV_NAME)/.env" -Destination "src/.env"
+        interactive: false
+        continueOnError: false
+      posix:
+        shell: sh
+        run: cp .azure/$(azd env get-value AZURE_ENV_NAME)/.env src/.env
+        interactive: false
+        continueOnError: false

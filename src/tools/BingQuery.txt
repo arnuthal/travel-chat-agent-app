@@ -1,0 +1,30 @@
+{
+  "type": "function",
+  "function": {
+    "name": "bing_query",
+    "description": "Search the internet by text using Bing. Terms and conditions require you to explicitly say results were pulled from the web, and list links the links associated with any information you provide. Before using this function, the assistant should always ask whether the user would like it to search the web.",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "query": {
+          "type": "string",
+          "description": "The query to pass into Bing"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "webpages",
+            "images",
+            "videos",
+            "news"
+          ],
+          "description": "The result type you are looking for. One of \"webpages\",\"images\",\"videos\",\"news\". If no news are returned, you may try webpages as a fallback."
+        }
+      },
+      "required": [
+        "query",
+        "type"
+      ]
+    }
+  }
+}

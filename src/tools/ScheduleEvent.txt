@@ -1,0 +1,29 @@
+{
+  "type": "function",
+  "function": {
+    "name": "schedule_event",
+    "description": "Schedules an event on the calendar",
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "subject": {
+          "type": "string",
+          "description": "The title of the event"
+        },
+        "start": {
+          "type": "string",
+          "description": "Start time of the event in ISO 8601 format, e.g. 2020-01-01T12:00:00Z"
+        },
+        "end": {
+          "type": "string",
+          "description": "End time of the event in ISO 8601 format, e.g. 2020-01-01T12:00:00Z"
+        }
+      },
+      "required": [
+        "subject",
+        "start",
+        "end"
+      ]
+    }
+  }
+}
