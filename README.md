@@ -45,8 +45,8 @@ To get started with the Azure Agents Travel Assistant, follow the instructions b
 
 2. Clone the repository:
     ```sh
-    git clone https://github.com/Azure-Samples/azureai-travel-agent-python
-    cd azureai-travel-agent-python
+    git clone https://github.com/arnuthal/travel-chat-agent-app
+    cd travel-chat-agent-app
     ```
 
 3. Deploy the infrastructure and sample app
@@ -135,7 +135,7 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 
 | Contact | GitHub ID | Email |
 |---------|-----------|-------|
-| Marco Cardoso | @MarcoABCardoso | macardoso@microsoft.com |
+| Aravind N | @arnuthal | findaravind@outlook.com |
 
 ## License
 
